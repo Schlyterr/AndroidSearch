@@ -19,7 +19,7 @@ class SuggestionAdapter<T>(context: Context?, resource: Int, objects: List<Strin
             var tempList = ArrayList<String>()
             while (letter <= 'ö') {
                 val word = objects[index]
-                if (word.first() == letter) tempList.add(word)
+                if (word.first() == letter) { tempList.add(word) }
                 else {
                     storeWords.put(letter, tempList)
                     tempList = ArrayList<String>()
